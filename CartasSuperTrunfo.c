@@ -1,22 +1,48 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    // código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    char codigo[4];
+    char nome[20];
+    int populacao;
+    int area;
+    float pib;
+    int pontosTuristicos;
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("---- Super Trunfo - cadastro de cidades ----\n");
+    printf("Código da cidade (A-H, 01-04): ");
+    scanf("%s", &codigo);
+
+    printf("Nome: ");
+    scanf("%s", &nome);
+
+    printf("População: ");
+    scanf("%d", &populacao);
+
+    printf("Área (km²): ");
+    scanf("%d", &area);
+
+    printf("PIB: ");
+    scanf("%f", &pib);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontosTuristicos);
+   
+    printf("\n---- Dados da cidade ----\n");
+    printf("Código: %s\n", codigo);
+    printf("Cidade: %s\n", nome);
+    printf("População: %d\n", populacao);
+    printf("Área: %d km²\n", area);
+    printf("PIB: R$ %.2f\n", pib);
+    printf("Pontos turísticos: %d\n", pontosTuristicos);
 
     return 0;
 }
+
+// --- Dados da cidade ----
+// Código: B01
+// Cidade: Erechim
+// População: 105705
+// Área: 429164 km²
+// PIB: R$ 5859841.00
+// Pontos turísticos: 1
