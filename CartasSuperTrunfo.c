@@ -11,7 +11,6 @@ int main() {
     float densidadePopulacional1, densidadePopulacional2;
     float pibPerCapta1, pibPerCapta2;
 
-    int comparacao;
     int opcao1, opcao2;
     float valor1, valor2, valor3, valor4;
     int resultado1, resultado2;
@@ -127,6 +126,7 @@ int main() {
             continue;
         }
     
+        // Cálculo
         switch(opcao1) {
             case 1:
                 valor1 = (float) populacao1;
@@ -299,6 +299,7 @@ int main() {
                 continue;
         }
 
+        // Visualização das comparações
         switch (opcao1) {
             case 1:
                 printf("Calculando população");
